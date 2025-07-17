@@ -1,26 +1,37 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@theme {
+  --color-green-dark: #0E2C08;
+  --color-green-medium: #93A384;
+  --color-green-light: #E6EBDF;
+  --color-text-dark-grey: #262626;
+  --color-text-medium-grey: #535353;
+  --color-beige-normal: #F2EDE7;
+  --color-beige-light: #F9F8F6;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-montserrat);
+}
+
+h1 {
+  font-family: var(--font-just-another-hand);
+  color: var(--color-green-dark);
+  font-size: clamp(3.75rem, 2.309vw + 3.152rem, 5rem);
+  line-height: clamp(5.625rem, 1.617vw + 5.207rem, 6.5rem);
+}
+
+h2 {
+  font-size: clamp(1.75rem, 0.518vw + 1.629rem, 2.25rem);
+  line-height: clamp(2.625rem, 0.311vw + 2.552rem, 2.925rem);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 0.518vw + 1.379rem, 2rem);
+  line-height: clamp(2.25rem, 0.362vw + 2.165rem, 2.6rem);
+}
+
+p {
+  font-size: clamp(0.875rem, 0.259vw + 0.814rem, 1.125rem);
+  line-height: clamp(1.138rem, 0.57vw + 1.004rem, 1.688rem);
 }
