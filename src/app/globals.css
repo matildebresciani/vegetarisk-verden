@@ -12,6 +12,7 @@
 
 body {
   font-family: var(--font-montserrat);
+  background-color: var(--color-beige-light);
 }
 
 h1 {
@@ -34,4 +35,14 @@ h3 {
 p {
   font-size: clamp(0.875rem, 0.259vw + 0.814rem, 1.125rem);
   line-height: clamp(1.138rem, 0.57vw + 1.004rem, 1.688rem);
+}
+
+@layer utilities {
+  .font-just-another-hand {
+    font-family: var(--font-just-another-hand);
+  }
+
+  .font-montserrat {
+    font-family: var(--font-montserrat);
+  }
 }
